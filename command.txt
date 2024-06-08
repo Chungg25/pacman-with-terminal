@@ -1,0 +1,13 @@
+# UCS
+python -B main.py -m smallMaze -s UCS
+python -B main.py -m mediumMaze -s UCS
+python -B main.py -m bigMaze -s UCS
+
+# AStar
+python -B main.py -m smallMaze -s AStar -hf h1
+python -B main.py -m mediumMaze -s AStar -hf h1
+python -B main.py -m bigMaze -s AStar -hf h1
+
+python -B main.py -m smallMaze -s AStar -hf h2
+python -B main.py -m mediumMaze -s AStar -hf h2
+python -B main.py -m bigMaze -s AStar -hf h2
