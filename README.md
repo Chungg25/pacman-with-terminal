@@ -18,18 +18,14 @@ The A* search algorithm uses a combination of the cost to reach the current stat
 ### 1. Minimum Euclidean Distance
 This heuristic computes the **Euclidean distance** between the current position of Pacman and the nearest goal state (food pellet or corner of the maze). The Euclidean distance is the straight-line distance between two points in a 2D space, calculated as:
 
-\[
-\text{distance} = \sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2}
-\]
+`distance = sqrt((x2 - x1)^2 + (y2 - y1)^2)`
 
 In this case, the heuristic calculates the minimum Euclidean distance to any of the goal positions (food pellets or corners), which helps guide Pacman towards the nearest goal.
 
 ### 2. Distance Between Two Farthest Food Pellets
 This heuristic aims to find the **Manhattan distance** between the two farthest food pellets on the map and adds the minimum distance from Pacman's current position to one of these farthest pellets. The **Manhattan distance** is the sum of the absolute differences of their x and y coordinates:
 
-\[
-\text{distance} = |x_1 - x_2| + |y_1 - y_2|
-\]
+`distance = |x1 - x2| + |y1 - y2|`
 
 By focusing on the two farthest food pellets, this heuristic helps Pacman plan a path that efficiently covers the most distant areas of the map. The final heuristic value is the distance between the farthest two food pellets, plus the shorter distance from Pacman to one of them.
 
