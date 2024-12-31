@@ -17,5 +17,5 @@ class Heuristic:
                     max_distance = dist
                     first = goal_state[i]
                     second = goal_state[j]
-        return max_distance + min( (manhattanDistance(pos, first), manhattanDistance(pos, second)) )
+        return max_distance + min( (manhattanDistance(pos, first), manhattanDistance(pos, second)))
     
