@@ -1,6 +1,5 @@
 
 # Enhanced Pacman Game
-![Pacman Game Preview](img/pacman.png)
 
 This project is a customized version of the classic Pacman game. The primary objective is to navigate Pacman through a maze to collect all food pellets while ensuring that Pacman visits all four corners of the map. Unlike the original game, this version has **no ghosts**, allowing the focus to be on pathfinding and optimization.
 
